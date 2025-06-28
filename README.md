@@ -1,4 +1,4 @@
-w# Portfolio – Product Designer
+# Portfolio – Product Designer
 
 A modern, responsive portfolio website for a Product Designer, built with HTML, CSS, and Bootstrap.
 
