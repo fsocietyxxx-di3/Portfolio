@@ -567,10 +567,6 @@ footer {
     color: #f8f8f8;
 }
 
-.dark-mode .service-card {
-    background-color: rgba(34, 34, 34, 0.8);
-}
-
 .dark-mode .project-card p {
     color: #aaa;
 }
