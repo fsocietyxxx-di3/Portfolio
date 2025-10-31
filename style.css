@@ -79,7 +79,6 @@ body {
     transition: all 0.3s ease;
 }
 
-/* Hamburger animation */
 .hamburger.active div:nth-child(1) {
     transform: rotate(45deg) translate(7px, 7px);
 }
@@ -342,7 +341,6 @@ body {
     z-index: 1000;
 }
 
-/* New sections styles */
 section {
     padding: 100px 20px;
     opacity: 0;
@@ -531,7 +529,6 @@ footer {
     color: #666;
 }
 
-/* Dark mode styles */
 .dark-mode {
     background-color: #111;
     color: #f8f8f8;

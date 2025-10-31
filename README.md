@@ -15,9 +15,9 @@ A modern, responsive portfolio website for a Product Designer, built with HTML, 
 ## Project Structure
 
 ```
-index.html        # Main HTML file
-style.css         # Custom styles
-img/profile.png   # Profile image
+index.html
+style.css
+img/profile.png
 ```
 
 ## How to Use

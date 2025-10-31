@@ -6,7 +6,6 @@
     <title>Portfolio | Product Designer</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css" type="text/css" media="all" />
-    <!-- Add Font Awesome for social icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
@@ -178,7 +177,6 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // Dark mode toggle
             const themeToggle = document.querySelector('.theme-toggle');
             
             themeToggle.addEventListener('click', function() {
@@ -192,14 +190,12 @@
                 }
             });
             
-            // Check for saved theme
             const savedTheme = localStorage.getItem('theme');
             if (savedTheme === 'dark') {
                 document.body.classList.add('dark-mode');
                 themeToggle.textContent = '🌙';
             }
             
-            // Hamburger menu animation and toggle
             const hamburger = document.querySelector('.hamburger');
             const nav = document.querySelector('.main-nav');
             
@@ -208,7 +204,6 @@
                 nav.classList.toggle('show');
             });
             
-            // Close menu when clicking outside
             document.addEventListener('click', function(event) {
                 if (!hamburger.contains(event.target) && !nav.contains(event.target) && nav.classList.contains('show')) {
                     hamburger.classList.remove('active');
@@ -216,12 +211,10 @@
                 }
             });
             
-            // Smooth scrolling for anchor links
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function(e) {
                     e.preventDefault();
                     
-                    // Close menu when clicking a nav item
                     if (nav.classList.contains('show')) {
                         hamburger.classList.remove('active');
                         nav.classList.remove('show');
@@ -239,7 +232,6 @@
                 });
             });
             
-            // Animate elements on scroll
             const animateOnScroll = function() {
                 const sections = document.querySelectorAll('section');
                 
@@ -253,7 +245,6 @@
                 });
             };
             
-            // Run animation check on load and scroll
             window.addEventListener('scroll', animateOnScroll);
             window.addEventListener('load', animateOnScroll);
         });
